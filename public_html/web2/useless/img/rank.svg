@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.67 30.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e7e8;
+        stroke: #231f20;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #f26522;
+      }
+
+      .cls-2 {
+        stroke: #f26522;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: #939598;
+      }
+
+      .cls-5 {
+        fill: #939598;
+      }
+    </style>
+  </defs>
+  <g id="rank">
+    <g id="friend">
+      <circle class="cls-1" cx="15.08" cy="7.38" r="6.88"/>
+      <path class="cls-1" d="M6.29,27.32s-.45-10.16,8.79-10.16,9.08,10.16,9.08,10.16c0,0,.45,2.23-8.94,2.23s-8.94-2.23-8.94-2.23Z"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="4.88" y1="20.09" x2="4.88" y2="16.3"/>
+      <polygon class="cls-4" points="6.88 16.88 4.88 13.43 2.89 16.88 6.88 16.88"/>
+    </g>
+    <g>
+      <line class="cls-3" x1="1.99" y1="17.89" x2="1.99" y2="21.68"/>
+      <polygon class="cls-5" points="0 21.1 1.99 24.55 3.99 21.1 0 21.1"/>
+    </g>
+  </g>
+</svg>

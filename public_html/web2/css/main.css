@@ -1,0 +1,131 @@
+header {
+  padding: 10px;
+  overflow: hidden;
+  width: 100vw;
+  position: fixed;
+  color: white;
+  background-color: black;
+}
+header nav {
+  font-size: 3vw;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 5fr max-content max-content max-content max-content;
+  gap: 1em;
+  align-items: center;
+}
+header img {
+  height: auto;
+  width: 6vw;
+}
+
+body {
+  background-color: #9252ff;
+}
+
+#exercises {
+  padding-top: 5em;
+}
+
+
+section {
+  overflow: hidden;
+}
+
+a h1:hover {
+  color: black;
+}
+
+section h1 {
+  position: relative;
+  text-align: center;
+}
+
+.seperator {
+  background-color: black;
+  width: 100vw;
+  height: 7vh;
+}
+
+footer {
+  margin-top: 24em;
+  padding: 2em;
+  background-color: black;
+  text-align: center;
+}
+
+footer a {
+  color: aliceblue;
+}
+
+footer a:hover {
+  color: rgb(4, 57, 103);
+}
+
+@media screen and (max-width: 600px) {
+  .seperator h2 {
+    font-size: 20px;
+  }
+  #websites {
+    margin: 0px;
+    gap: 0.4rem;
+  }
+  figcaption {
+    font-size: 0.7rem;
+  }
+  #other {
+    padding-top: 3em;
+  }
+}
+
+/* .parent { 
+  display: flex;
+  height: 500px;
+}
+
+.gear {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: #000000;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+
+.tooth {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  z-index: 1;
+  width: 45px;
+  height: 250px;
+  background: #000000;
+}
+
+.tooth:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.tooth:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.tooth:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+ @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */

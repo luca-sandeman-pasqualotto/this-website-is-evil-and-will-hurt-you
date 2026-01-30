@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.43 64.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e7e8;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #f26522;
+      }
+    </style>
+  </defs>
+  <g id="instant_message">
+    <g id="friend">
+      <circle class="cls-1" cx="178.56" cy="8.38" r="6.88"/>
+      <path class="cls-1" d="M169.77,28.33s-.45-10.16,8.79-10.16,9.08,10.16,9.08,10.16c0,0,.45,2.23-8.94,2.23s-8.94-2.23-8.94-2.23Z"/>
+    </g>
+    <ellipse class="cls-2" cx="193.87" cy="7.44" rx="5.51" ry="4.61"/>
+    <polygon class="cls-2" points="189.22 9.84 188.84 13.1 193.3 11.14 189.22 9.84"/>
+  </g>
+</svg>

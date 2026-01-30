@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.43 64.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f15a29;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #e6e7e8;
+        stroke: #231f20;
+      }
+
+      .cls-3 {
+        stroke-width: 1.06px;
+      }
+    </style>
+  </defs>
+  <g id="favourite">
+    <path class="cls-3" d="M247.86,42.14h8.82c1.12,0,2.03.91,2.03,2.03v3.8h-12.87v-3.8c0-1.12.91-2.03,2.03-2.03Z"/>
+    <path class="cls-2" d="M270.85,64.07h-22.06c-1.63,0-2.95-1.32-2.95-2.95v-13.26c0-1.63,5.31-1.32,6.94-1.32l2.3-1.14c.64-.32,1.35-.48,2.06-.48h13.72c1.63,0,2.95,1.32,2.95,2.95v13.26c0,1.63-1.32,2.95-2.95,2.95Z"/>
+  </g>
+  <path class="cls-1" d="M258.01,48.99s4.37,5.05,5.83,6.85l13.34-13.7"/>
+</svg>

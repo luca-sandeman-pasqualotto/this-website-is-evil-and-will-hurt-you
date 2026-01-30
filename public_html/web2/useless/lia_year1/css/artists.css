@@ -1,0 +1,78 @@
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #365f6b;
+  font-size: 30px;
+}
+
+header h1 {
+  padding: 2rem 1.44rem 0 10rem;
+}
+.orange {
+  background: #eb9800;
+  color: #e8d9be;
+}
+.orange:hover {
+  background: #6b5836;
+}
+
+.blue {
+  background: #00b5ea;
+  color: #6b4532;
+}
+.blue:hover {
+  background: #365f6b;
+  color: #e8d9be;
+}
+
+#title {
+  position: absolute;
+  top: 44vh;
+  padding: 0.6em;
+  color: #eb4c00;
+}
+#artists article {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 3rem;
+  top: 60vh;
+  left: 15vw;
+}
+
+#artists img {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.over {
+  transition: all 0.25s;
+  position: absolute;
+  top: 0;
+  transform: translateY(1.728rem);
+  opacity: 0;
+  background: black;
+  width: 30vw;
+  height: 20vh;
+}
+
+#artists figure:hover .over {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.over p {
+  padding: 0.2em;
+  text-align: center;
+  font-size: 15px;
+  opacity: 1;
+  color: #e8d9be;
+}
+
+.expand img {
+  transform: 0.25s;
+  opacity: 0;
+}

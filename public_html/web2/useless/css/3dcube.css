@@ -1,0 +1,98 @@
+body{
+    background-color: rgba(2 3 43);
+}
+
+main{
+    font-size: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 10em;
+    perspective-origin: 50% calc(50% - 3em);
+}
+
+.scene{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+.floor{
+    width: 15em;
+    height: 15em;
+    position: absolute;
+    top: 1em;
+    background-image: 
+    radial-gradient(rgba(1, 11, 42, 0.75) 10%,rgba(0, 42, 82, 0.324) 20%, rgb(0, 7, 42) 60%),
+    repeating-conic-gradient(from 45deg, rgba(18, 176, 215, 0.5) 0deg 90deg, rgba(16, 61, 65, 0.5) 90deg 180deg);
+    background-size: 100%, 1em 1em;
+    transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+.cube{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    transform-style: preserve-3d;
+    top: -1em;
+    left: -1em;
+}
+
+.front, .back, .left, .right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.5);
+    box-shadow: inset 0 0 0.5em 0 rgba(13, 66, 13, 0.75);
+}
+
+.front{
+    transform: translateZ(1em);
+}
+
+.back{
+    transform: rotateY(180deg) translateZ(1em);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(1em);
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(1em);
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(1em);
+    width: 2em;
+    height: 2em;
+    background-color: rgba(29, 251, 88, 0.25);
+    /* background-image: radial-gradient(rgb(32 32 32 / 0.75) 20%, 
+        rgb(32 32 32 / 0.05) 33%);*/
+}
+
+.bottom{
+    transform:  rotateY(90deg) translateZ(1em);
+}
+
+.center{
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+}
+
+
+/* @keyframes */
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}

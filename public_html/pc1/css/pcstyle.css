@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: slategray;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: rgb(8, 184, 126);
+  height: 110px;
+  text-align: center;
+  font-size: 22px;
+}
+
+header a {
+  color: rgb(0, 251, 255);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgb(8, 52, 117);
+}
+
+nav ul li {
+  display: inline;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  display: inline;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 30px 10px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(80, 153, 255);
+  border-bottom-color: rgb(57, 225, 169);
+  border-right-color: rgb(57, 225, 169);
+}
+
+button:hover {
+  background-color: rgb(45, 107, 194);
+  border-bottom-color: rgb(30, 141, 104);
+  border-right-color: rgb(30, 141, 104);
+}
+
+a button {
+  color: rgb(0, 251, 255);
+}
+
+#banner {
+  background-image: url(../img/banner.jpg);
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+a button:hover {
+  color: rgb(8, 52, 117);
+}
+
+main a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+main a:hover {
+  color: rgb(108, 108, 108);
+}
+
+main article {
+  padding: 20px;
+  margin: 3px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+section article {
+  padding: 20px;
+  margin: 3px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+main article img {
+  width: 100%;
+  height: auto;
+}
+
+section article img {
+  width: 100%;
+  height: auto;
+}
+
+main article figure {
+  border: 21px solid whitesmoke;
+  border-bottom: 30px solid whitesmoke;
+  background-color: whitesmoke;
+}
+section article figure {
+  border: 21px solid whitesmoke;
+  border-bottom: 60px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+section article figcaption {
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+}

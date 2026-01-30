@@ -1,0 +1,119 @@
+body {
+  color: black;
+  background-color: white;
+}
+
+h3,
+h1,
+p {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+main {
+  padding: 50px;
+  padding-top: 70px;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+header {
+  padding: 10px;
+  width: 100%;
+  background-color: blue;
+  position: fixed;
+  text-align: center;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
+img {
+  height: auto;
+  width: 300px;
+}
+#music {
+  position: absolute;
+  margin-left: 31rem;
+  top: 50vh;
+}
+
+#other {
+  position: absolute;
+  margin-left: 31rem;
+  top: 10vh;
+}
+#profile {
+  display: block;
+  position: absolute;
+}
+
+#profile img {
+  border: solid 2px black;
+  float: left;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.bio {
+  padding-left: 14rem;
+  max-width: 40ch;
+}
+
+#contact {
+  margin-top: 16rem;
+  border: 4px solid blue;
+  margin-right: 60rem;
+}
+
+#contact img {
+  width: 30px;
+}
+
+#contact h3 {
+  background-color: blue;
+  padding: 0.5em;
+}
+
+.container {
+  display: inline-grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.friends {
+  position: relative;
+  margin-left: 31rem;
+  padding-top: 400px;
+}
+.comments {
+  position: relative;
+  margin-left: 31rem;
+  padding-top: 70px;
+}
+
+.blog {
+  padding-bottom: 30px;
+}
+
+.aboutme {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+}
+
+body {
+    background-color: pink;
+}
+
+#container{
+    padding: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr */
+    /* grid-template-columns: repeat(2, 1fr) */
+    gap: 20px;
+}
+/* #container div */
+.grid-item{
+    min-height: 300px;
+    background-color: rgb(255, 116, 190);
+     border: 21px solid whitesmoke;
+     border-bottom: 60px solid whitesmoke;
+     box-shadow: 4px 8px 8px rgb(37, 37, 37);
+}
+
+/* individual grids */
+.grid-item.a {
+    background-color: rgb(197, 117, 240);
+    rotate: -5deg;
+}
+
+.grid-item.b {
+    background-color: rgb(240, 117, 139);
+    rotate: 3deg;
+}
+.grid-item.c {
+    background-color: rgb(237, 108, 194);
+    rotate: 10deg;
+}
+
+.grid-item.d {
+    background-color: rgb(236, 117, 240);
+    rotate: -4deg;
+}
+
+.grid-item.e {
+    background-color: rgb(112, 166, 247);
+    rotate: -15deg;
+}
+
+.grid-item.f {
+    background-color: rgb(127, 112, 238);
+    rotate: 1deg;
+}
+
+.grid-item.g {
+    background-color: rgb(234, 92, 92);
+    rotate: -4deg;
+}
+
+.grid-item.h {
+    background-color: rgb(117, 191, 240);
+    rotate: 2deg;
+}
+.grid-item.i {
+    background-color: rgb(240, 117, 156);
+    rotate: 4deg;
+}

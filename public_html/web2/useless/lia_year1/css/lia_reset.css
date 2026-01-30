@@ -1,0 +1,44 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8d9be;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6b4532;
+}
+
+img {
+  width: 100%;
+}
+nav button:first-of-type {
+  justify-self: end;
+}
+nav {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: 3.6rem;
+}
+nav button {
+  width: max-content;
+  padding: 0.25rem 1.44rem;
+}
+a {
+  text-decoration: none;
+}
+header h1 {
+  padding: 2rem 1.44rem 0 1.44rem;
+}
+
+header button {
+  margin: 20px;
+  padding: 2rem 2.5rem;
+  border-radius: 0.4em;
+  border: 0px;
+  font-size: 4.3vw;
+}

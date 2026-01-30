@@ -1,0 +1,150 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #365f6b;
+  font-size: 30px;
+}
+nav {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: 3.6rem;
+}
+nav button {
+  width: max-content;
+  padding: 0.25rem 1.44rem;
+}
+nav button:first-of-type {
+  justify-self: end;
+}
+header h1 {
+  padding: 2rem 1.44rem 0 1.44rem;
+}
+
+header button {
+  margin: 20px;
+  padding: 2rem 2.5rem;
+  border-radius: 0.4em;
+  border: 0px;
+  font-size: 4.3vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brown {
+  background: #6b4532;
+  color: #e8d9be;
+}
+.brown:hover {
+  background: #6b5836;
+}
+
+.brown a {
+  color: #e8d9be;
+}
+
+.blue {
+  background: #00b5ea;
+  color: #6b4532;
+}
+.blue:hover {
+  background: #365f6b;
+  color: #e8d9be;
+}
+
+main {
+  padding-top: 50vh;
+}
+
+#title {
+  text-align: center;
+  margin-top: 0em;
+  color: #eb4c00;
+}
+
+#bauhaus {
+  padding: 1rem;
+}
+
+#bauhaus img {
+  width: 60%;
+  right: 0;
+  position: absolute;
+}
+
+#bauhaus figcaption {
+  position: absolute;
+  top: 33.4rem;
+  right: 0;
+  padding: 0.2rem;
+  font-size: 14px;
+  color: #6b5836;
+}
+
+#explanation {
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  top: 37rem;
+  font-size: 16px;
+}
+
+.text {
+  padding-left: 5.7rem;
+}
+
+#more {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  top: 55rem;
+  padding: 1em;
+  color: #365f6b;
+}
+
+@media screen and (min-width: 376px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #title {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    font-size: 2vw;
+  }
+  .text {
+    padding-left: 14rem;
+  }
+
+  #explanation {
+    position: absolute;
+    padding-left: 0;
+    top: 92vw;
+    font-size: 2rem;
+  }
+  #more {
+    position: absolute;
+    top: 150vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #explanation {
+    top: 91vw;
+  }
+  .text {
+    padding-left: 24vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #explanation {
+    top: 67vw;
+  }
+}

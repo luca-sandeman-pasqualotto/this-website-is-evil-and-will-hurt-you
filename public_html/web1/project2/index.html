@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 | My Character</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div id="panel">Click!!!</div>
+
+    <a href="../index.html"><p>Go BACK</p></a>
+    <h1></h1>
+    <img src="./img/link.svg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, rerum. Itaque, nulla? Non cupiditate nam perferendis repudiandae quo laborum ullam sapiente ab voluptate laboriosam dolore, quod odio deleniti enim magnam.
+    </p>
+    
+    <h3>Design Process</h3>
+    <img class="screenshot" src="img/Screenshot 2024-11-21 at 3.25.28 PM.png">
+<br>
+    <button id="game" onclick="top.location.href = '../project3/index.html'">Play Game!</button>
+
+    <script>
+
+        const panel = document.getElementById("panel");
+        const sound =  new Audio("sounds/zeldachest.mp3");
+        panel.onclick = function() {
+            this.classList.toggle("slide-up");
+            sound.play();
+        }
+    </script>
+</body>
+</html>

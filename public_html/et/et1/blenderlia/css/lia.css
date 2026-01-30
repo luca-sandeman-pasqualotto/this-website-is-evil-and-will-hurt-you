@@ -1,0 +1,83 @@
+body,
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  background-color: #74e0aa;
+}
+
+body {
+  background-color: #c4d9a9;
+}
+
+.banner {
+  background-image: url(../img/banner.jpg);
+  width: auto;
+  height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#explanation {
+  padding: 20px;
+  text-align: center;
+}
+
+section article {
+  padding: 20px;
+  margin: 3px;
+  justify-items: center;
+  position: relative;
+  display: grid;
+  gap: 7rem;
+  grid-template-columns: repeat(auto-fill, minmax(312px, 3fr));
+}
+
+figure img {
+  width: auto;
+  height: 500px;
+}
+
+section article figure {
+  border: 21px solid whitesmoke;
+  border-bottom: 27px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+section article figcaption {
+  padding-top: 31px;
+}
+
+section p {
+  padding: 30px;
+  font-size: 23px;
+}
+
+#examples {
+  align-items: center;
+  padding-top: 200px;
+  padding: 100px;
+  margin: 100px;
+}
+
+#examples figure {
+  margin: 200px;
+}
+
+footer {
+  background-color: #bee893;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 21px;
+}

@@ -1,0 +1,291 @@
+#websites {
+  display: grid;
+}
+
+#websites article {
+  position: relative;
+}
+
+#websites a {
+  border: solid 5px white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#websites figure {
+  position: relative;
+}
+
+#websites img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/6;
+  position: relative;
+  object-position: center center;
+  top: 0;
+}
+
+#zomboid h3 {
+  font-size: clamp(0.833rem, 1.6wv + 0.578rem, 1.728rem);
+  opacity: 0, 5;
+  transition: opacity 0.5s;
+  height: 100%;
+  font-size: 1rem;
+  align-content: space-around;
+}
+
+#zomboid p {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+#zomboid .over {
+  position: relative;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+#zomboid a:hover {
+  color: white;
+}
+/* trying to figure out why the color changes to a dark grey after a seecond??
+
+color is barely visible against the background*/
+
+#zomboid {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+
+#zomboid section h3 {
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+#zomboid article {
+  position: relative;
+}
+#zomboid section {
+  width: 100%;
+  text-align: center;
+  padding: 0.833;
+  position: absolute;
+  top: 30%;
+}
+
+#zomboid figure {
+  position: relative;
+}
+
+#zomboid a {
+  border: solid 5px white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#zomboid img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+}
+
+#zomboid a:hover h3,
+#zomboid a:hover p {
+  opacity: 1;
+}
+
+#zomboid a:hover section {
+  transform: translateY(0);
+}
+
+#zomboid a:hover .over {
+  transform: translateY(0);
+  opacity: 1;
+}
+#gallery h3 {
+  font-size: clamp(0.833rem, 1.6wv + 0.578rem, 1.728rem);
+  opacity: 0, 5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  transition: opacity 0.5s;
+  height: 100%;
+  font-size: 1rem;
+  align-content: space-around;
+}
+
+#gallery p {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+#gallery .over {
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+}
+
+#gallery a:hover {
+  color: white;
+}
+/* trying to figure out why the color changes to a dark grey after a seecond??
+
+color is barely visible against the background*/
+
+#gallery {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+
+#gallery section h3 {
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+#gallery article {
+  position: relative;
+}
+#gallery section {
+  width: 100%;
+  text-align: center;
+  padding: 0.833;
+  position: absolute;
+  top: 30%;
+}
+
+#gallery figure {
+  position: relative;
+}
+
+#gallery a {
+  border: solid 5px white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#gallery img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+}
+
+#gallery a:hover h3,
+#gallery a:hover p {
+  opacity: 1;
+}
+
+#gallery a:hover section {
+  transform: translateY(0);
+}
+
+#gallery a:hover .over {
+  transform: translateY(0);
+  opacity: 1;
+}
+#music h3 {
+  font-size: clamp(0.833rem, 1.6wv + 0.578rem, 1.728rem);
+  opacity: 0, 5;
+  transition: opacity 0.5s;
+  height: 100%;
+  font-size: 1rem;
+  align-content: space-around;
+}
+
+#music p {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+#music .over {
+  position: relative;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+#music a:hover {
+  color: white;
+}
+/* trying to figure out why the color changes to a dark grey after a seecond??
+
+color is barely visible against the background*/
+
+#music {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+
+#music section h3 {
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+#music article {
+  position: relative;
+}
+#music section {
+  width: 100%;
+  text-align: center;
+  padding: 0.833;
+  position: absolute;
+  top: 30%;
+}
+
+#music figure {
+  position: relative;
+}
+
+#music a {
+  border: solid 5px white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#music img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+  top: 0;
+}
+
+#music a:hover h3,
+#music a:hover p {
+  opacity: 1;
+}
+
+#music a:hover section {
+  transform: translateY(0);
+}
+
+#music a:hover .over {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  #interests {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+  }
+  #zomboid h3 {
+    font-size: 42px;
+  }
+  #other {
+    display: grid;
+    padding-left: 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #3fdcb2;
+  color: rgb(73, 7, 186);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: rgb(4, 20, 20);
+}
+
+#interests {
+  padding: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  
+}
+
+pre {
+  color: black;
+}
+
+button {
+  width: 30%;
+  height: 100px;
+  display: block;
+  padding: 30px 100px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(80, 153, 255);
+  border-bottom-color: rgb(95, 248, 248);
+  border-right-color: rgb(95, 248, 248);
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(9, 99, 173);
+}

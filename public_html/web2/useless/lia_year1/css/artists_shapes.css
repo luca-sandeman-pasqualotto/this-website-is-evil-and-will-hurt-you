@@ -1,0 +1,75 @@
+#shapes {
+  position: absolute;
+  width: 100vw;
+}
+
+#shapes section {
+  top: 1rem;
+  position: absolute;
+}
+
+.redrectangle {
+  width: 66vw;
+  height: 20vh;
+  background: #eb4c00;
+  padding: 10px;
+  margin-bottom: 0px;
+  right: 0;
+}
+
+.bluerectangle {
+  left: 0;
+  margin-top: 2em;
+  width: 60vw;
+  height: 200px;
+  background: #00b5ea;
+}
+
+.orangecircle {
+  width: 36vw;
+  height: 36vw;
+  background-color: #eb9800;
+  border-radius: 50%;
+  right: 10em;
+}
+
+#bodyshapes {
+  position: absolute;
+  width: 100vw;
+}
+
+.circle {
+  width: 35vw;
+  height: 35vw;
+  background: #00b5ea;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.7rem;
+}
+.browncircle {
+  width: 24vw;
+  height: 24vw;
+  background: #6b5836;
+  border-radius: 50%;
+  position: absolute;
+  top: 4rem;
+  left: 1.3rem;
+}
+
+.brownsquare {
+  width: 22vw;
+  height: 270px;
+  background: #6b5836;
+  position: absolute;
+  top: 1.7rem;
+}
+
+.redcircle {
+  width: 35vw;
+  height: 35vw;
+  background: #eb4c00;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 3.3rem;
+  top: 2.7rem;
+}

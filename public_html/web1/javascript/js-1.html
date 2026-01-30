@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Demo 1</title>
+    <style>body{background-color: aquamarine;
+    }</style>
+</head>
+<body>
+    <h1>thanks :3</h1>
+<main id="content">Loading</main>
+    <!-- <audio src="sound/metal-pipe-230698.mp3" controls></audio> -->
+     
+    <button onclick="pipelol()">AAHHH SCARY PIPE</button>
+    <br>
+    <script>
+        alert('GIMME YOUR MONEY GRAHHHHHHH')
+
+        console.log("AHHHHHHHHHHHH")
+
+        // variables
+        // dynamic variable type "let" (data can be changed)
+        // windows+period to add emojji
+
+        
+        let myName = "Silly Billy"
+
+        myName = "the void is hungry."
+
+        console.log(myName)
+
+        // constant variable (data cannot be changed)
+
+        const pi = 3.14159;
+        console.log(pi * 5);
+
+        /// mixed message logging
+        // uses + to concatenate multiple strings with other strings or data
+        // string = textual data, in quotes
+        console.log("pi times 5: " + pi*5);
+
+        function feedthevoid() {
+            alert("its hunger will never be quenched.")
+        }
+
+        let mySound = new Audio("sound/metal-pipe-230698.mp3");
+
+      
+
+        const myContent = document.getElementById("content");
+
+          function pipelol() {
+            mySound.play();
+            myContent.innerHTML = '<h2>BIG SCARY PIPE</h2><img src="img/metal-pipe-gggg.gif"/><br><a href="index.html">ok you can leave now</a>'
+        }
+
+    </script>
+
+    <button onclick="feedthevoid()">Feed the void</button>
+    
+</body>
+</html>
