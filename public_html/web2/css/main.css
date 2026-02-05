@@ -1,5 +1,5 @@
 header {
-  padding: 10px;
+  padding: 0.4rem;
   overflow: hidden;
   width: 100vw;
   position: fixed;
@@ -19,14 +19,114 @@ header img {
   width: 6vw;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: #9252ff;
 }
 
 #exercises {
-  padding-top: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-left: 75vw;
+  padding: 5rem;
+  background-color: black;
 }
 
+#projects nav {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 3fr 3fr 3fr 1fr;
+  top: 20rem;
+  right: 0vw;
+  background-color: black;
+  width: 30%;
+  padding-left: 3rem;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Gallery */
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 10vw;
+}
+
+/* Modal */
+
+dialog {
+  position: fixed;
+  top: 5vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+dialog img {
+  width: 100%;
+  max-height: 83vh;
+}
+
+dialog::backdrop {
+  background: rgb(2, 22, 39 /0.8);
+}
+
+/* dialog animations */
+
+dialog {
+  animation: fade-out 0.7s ease-out;
+}
+
+dialog:open {
+  animation: fade-in 0.7s ease-out;
+}
+
+dialog:open::backdrop {
+  animation: fade-in 0.7s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
 
 section {
   overflow: hidden;
@@ -36,11 +136,6 @@ a h1:hover {
   color: black;
 }
 
-section h1 {
-  position: relative;
-  text-align: center;
-}
-
 .seperator {
   background-color: black;
   width: 100vw;
@@ -48,7 +143,6 @@ section h1 {
 }
 
 footer {
-  margin-top: 24em;
   padding: 2em;
   background-color: black;
   text-align: center;
@@ -62,19 +156,17 @@ footer a:hover {
   color: rgb(4, 57, 103);
 }
 
-@media screen and (max-width: 600px) {
-  .seperator h2 {
-    font-size: 20px;
+@media screen and (max-width: 1024px) {
+  #gallery {
+    grid-template-columns: 1fr;
+    padding-top: 25vw;
   }
-  #websites {
-    margin: 0px;
-    gap: 0.4rem;
+  header {
+    padding: 1rem;
   }
-  figcaption {
-    font-size: 0.7rem;
-  }
-  #other {
-    padding-top: 3em;
+  header nav {
+    font-size: 5vw;
+    padding-right: 0;
   }
 }
 
