@@ -1,12 +1,12 @@
 console.log('Gallery!!! BOO!');
 
 const thumbnails = document.querySelectorAll('figure');
-console.info(thumbnails);
+// console.info(thumbnails);
 
 const modal = document.querySelector('dialog');
 
 thumbnails.forEach(thumb => {
-    console.log(thumb);
+    // console.log(thumb);
     thumb.addEventListener('click', loadModal);
 })
 
@@ -17,6 +17,6 @@ function loadModal(event) {
     console.info(thumbImg);
 
     modal.querySelector('figure').innerHTML = (event.target.closest('figure').innerHTML);
-    modal.querySelector('img').src = 'photos' + thumbImg;
+    modal.querySelector('img').src = 'images' + thumbImg;
     modal.showModal();
 }
