@@ -21,17 +21,11 @@
   animation: wavemaker 12s ease-in-out infinite alternate;
 }
 
-#cls-1 {
-}
-
-#cls-2 {
-}
-
 
 
 @keyframes wavemaker {
   0% {
-    transform: translateX(-4vw);
+    transform: translateX(-3vw);
   }
   100% {
     transform: translateX(-1vw);

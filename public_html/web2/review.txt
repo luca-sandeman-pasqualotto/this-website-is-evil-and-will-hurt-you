@@ -1,0 +1,8 @@
+Variables
+
+string: characters wrapped in quotation marks
+    'john' = string
+
+array: list of items 
+    ex: let grocery = ["milk", "bread", "fruits"]
+
