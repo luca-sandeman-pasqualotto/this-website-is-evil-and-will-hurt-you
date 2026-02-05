@@ -37,19 +37,22 @@ body {
   background-color: black;
 }
 
+#project {
+}
+
 #projects nav {
-  position: absolute;
   display: grid;
   grid-template-rows: 3fr 3fr 3fr 1fr;
-  top: 20rem;
-  right: 0vw;
   background-color: black;
+  font-size: 2rem;
+  font-weight: bold;
   width: 30%;
   padding-left: 3rem;
   padding: 2rem;
   padding-bottom: 5rem;
-  font-size: 2rem;
-  font-weight: bold;
+  margin-top: 20rem;
+  margin-left: 70vw;
+  margin-bottom: 7rem;
 }
 
 /* Gallery */
@@ -216,7 +219,9 @@ footer a:hover {
     margin: auto 0;
   }
   #projects nav{
-    right: 0;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    margin-left: 40vw;
     width: 60%;
     font-size: 1rem;
     padding: 0.8rem;
