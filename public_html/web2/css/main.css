@@ -29,6 +29,13 @@ body {
   background-color: #9252ff;
 }
 
+.seperator {
+  background-color: black;
+  width: 100vw;
+  height: 7vh;
+  margin-top: -0.3rem;
+}
+
 #exercises {
   margin-top: 5em;
   margin-bottom: 5em;
@@ -37,7 +44,10 @@ body {
   background-color: black;
 }
 
-#project {
+/* this is for the looping video that plays on the projects page */
+#looping_video {
+  width: 100%;
+  padding-top: 3rem;
 }
 
 #projects nav {
@@ -47,13 +57,13 @@ body {
   font-size: 2rem;
   font-weight: bold;
   width: 30%;
-  padding-left: 3rem;
+  padding-left: 10rem;
   padding: 2rem;
   padding-bottom: 5rem;
-  margin-top: 20rem;
+  margin-top: 7rem;
   margin-left: 70vw;
-  margin-bottom: 7rem;
 }
+
 
 /* Gallery */
 
@@ -183,11 +193,6 @@ a h1:hover {
   color: black;
 }
 
-.seperator {
-  background-color: black;
-  width: 100vw;
-  height: 7vh;
-}
 
 footer {
   padding: 2em;
@@ -216,6 +221,7 @@ footer a:hover {
   }
   dialog {
     max-width: 100%;
+    max-height: fit-content;
     margin: auto 0;
   }
   #projects nav{
