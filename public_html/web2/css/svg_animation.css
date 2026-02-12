@@ -31,3 +31,15 @@
     transform: translateX(-1vw);
   }
 }
+
+@media screen and (max-width: 1024px) { 
+@keyframes wavemaker {
+  0% {
+    transform: translateX(-1vw);
+  }
+
+  100% {
+    transform: translateX(-15vw);
+  }
+}
+}

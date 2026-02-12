@@ -8,7 +8,7 @@ header {
   z-index: 999;
 }
 header nav {
-  font-size: 3vw;
+  font-size: 46px;
   padding-right: 20px;
   display: grid;
   grid-template-columns: 5fr max-content max-content max-content max-content;
@@ -216,8 +216,12 @@ footer a:hover {
     padding: 1rem;
   }
   header nav {
-    font-size: 5vw;
+    font-size: 20px;
     padding-right: 0;
+    gap: 0.5rem;
+  }
+  header img {
+    width: 10vw;
   }
   dialog {
     max-width: 100%;
@@ -231,5 +235,8 @@ footer a:hover {
     width: 60%;
     font-size: 1rem;
     padding: 0.8rem;
+  }
+  #exercises {
+    margin-left: 33vw;
   }
 }

@@ -16,7 +16,7 @@ function loadModal(event) {
     thumbImg = thumbImg.substring(thumbImg.lastIndexOf('/'));
     console.info(thumbImg);
 
-    modal.querySelector('figure').innerHTML = (event.target.closest('figure').innerHTML);
+    modal.querySelector('figure').innerHTML = event.target.closest('figure').innerHTML;
     modal.querySelector('img').src = 'images' + thumbImg;
     modal.showModal();
 }
