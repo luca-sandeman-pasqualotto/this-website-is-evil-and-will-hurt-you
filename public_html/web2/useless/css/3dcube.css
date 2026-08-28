@@ -43,8 +43,8 @@ main{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 255, 0, 0.5);
-    box-shadow: inset 0 0 0.5em 0 rgba(13, 66, 13, 0.75);
+    background-color: rgba(149, 29, 189, 0.5);
+    box-shadow: inset 0 0 0.5em 0 rgba(38, 13, 66, 0.75);
 }
 
 .front{
@@ -67,7 +67,7 @@ main{
     transform: rotateX(90deg) translateZ(1em);
     width: 2em;
     height: 2em;
-    background-color: rgba(29, 251, 88, 0.25);
+    background-color: rgba(67, 8, 83, 0.5);
     /* background-image: radial-gradient(rgb(32 32 32 / 0.75) 20%, 
         rgb(32 32 32 / 0.05) 33%);*/
 }

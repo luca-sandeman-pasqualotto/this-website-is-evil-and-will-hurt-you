@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#border{
+    width: calc(30vmin + 12px);
+    height: calc(30vmin + 12px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid black 1px;
+}
+
+#border .box {
+    border: solid black 1px;
+    display: grid;
+    place-items: center;
+    height: 10vmin;
+    width: 10vmin;
+    margin: 1px;
+}

@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     display: grid;
+    background-color: rgb(149, 149, 149);
+    place-content: center;
+}
+.top {
+    position: relative;
+    background-color: red;
+    color: white;
+  
+    height: 80px;
+    width: 120px;
+    border-radius: 50%;
+}
+.middle {
+    position:relative;
+
+    background-color: rgb(129, 0, 0);
+    height: 80px;
+    width: 120px;
+}   
+
+
+/* :root {
+  --scale: 4;
+  --frame-size: calc(var(--scale) * 230px);
+}
+
+@property --button-offset {
+  syntax: '<length>';
+  initial-value: 0px;
+  inherits: false;
+}
+
+#wrapper {
+  position: relative;
+
+  &:has(.checkbox:focus-visible) {
+    outline: 3px solid deepskyblue;
+    outline-offset: 4px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+
+  &:checked ~ .frame .button {
+    --button-offset: calc(-4 * var(--frame-size));
+  }
+}
+
+.frame {
+  height: var(--frame-size);
+  width: var(--frame-size);
+  overflow: hidden;
+  image-rendering: pixelated;
+
+  .button {
+    width: var(--frame-size);
+    translate: 0 round(var(--button-offset), var(--frame-size));
+    transition: --button-offset 500ms linear;
+  }
+} */

@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-content: center;
+  overflow-x: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url(../img/background.svg);
+  background-size: 40%;
+  background-attachment: fixed;
+  background-color: rgb(255, 216, 144);
+}
+
+
+header {
+   top: 0;
+  width: 100vw;
+}
+
+#sea {
+  margin-top: 2rem;
+  top: 0;
+  mask:
+      radial-gradient(4.92rem at 50% 6.9rem, #000 99%, #0000 101%) calc(50% - 6rem) 0/12rem 51% repeat-x,
+      radial-gradient(4.92rem at 50% -3.9rem, #0000 99%, #000 101%) 50% 3rem/12rem calc(51% - 3rem) repeat-x,
+      radial-gradient(4.92rem at 50% calc(100% - 6.9rem), #000 99%, #0000 101%) 50% 100%/12rem 51% repeat-x,
+      radial-gradient(4.92rem at 50% calc(100% + 3.9rem), #0000 99%, #000 101%) calc(50% - 6rem) calc(100% - 3rem)/12rem calc(51% - 3rem) repeat-x;
+}
+
+#sea img {
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  margin-top: -55%;
+  margin-bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+
+#logo img {
+ width: 55vw;
+ height: auto;
+}
+
+#body {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+   transform: translate(-50%);
+   min-height: 100vh;
+}
+#main {
+  
+  max-width: 18rem;
+  background-color:rgba(255, 244, 150, 0.829);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+#main, #mtp, #tlld, #crunch, #review, #news {
+    max-width: 32rem;
+      background-color: rgba(255, 244, 150, 0.829);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+}
+
+#main, #mtp, #tlld, #crunch, #news #review, #body {
+  border-radius: 5% 5% 0 0;
+  padding-bottom: 0.3rem;
+  
+}
+
+/* gallery */
+
+#gallery_container #gallery_wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 2) - 1rem);
+  gap: 1.2rem;
+  overflow: hidden;
+}
+#gallery_container {
+  padding: 0.1rem;
+  margin: 1rem auto;
+  max-width: 70rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+#gallery_container figcaption {
+  align-content: center;
+  justify-content: center;
+
+}
+
+#gallery_wrapper.dragging .building {
+  cursor: grab;
+  user-select: none;
+}
+
+
+#gallery_container::-webkit-scrollbar {
+  display:none;
+}
+
+#gallery_wrapper .building {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* #gallery_wrapper .building {
+  flex-direction: column;
+} */
+
+.building {
+display: flex;
+  padding: 1rem;
+  background-color: rgba(255, 244, 150, 0.829);
+   border-radius: 0.1rem;
+      mask:
+        radial-gradient(15.24px at 50% 21.5px, #000 99%, #0000 101%) calc(50% - 20px) 0/40px 51% repeat-x,
+        radial-gradient(15.24px at 50% -11.5px, #0000 99%, #000 101%) 50% 10px/40px calc(51% - 10px) repeat-x,
+        radial-gradient(15.24px at 50% calc(100% - 21.5px), #000 99%, #0000 101%) 50% 100%/40px 51% repeat-x,
+        radial-gradient(15.24px at 50% calc(100% + 11.5px), #0000 99%, #000 101%) calc(50% - 20px) calc(100% - 10px)/40px calc(51% - 10px) repeat-x;
+}
+.building figure img {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.end {
+  border-radius: 0 0 15% 15%;
+}
+
+article p {
+  padding: 1.84rem 1.2rem;
+  background-color: white;
+}
+p {
+  margin: 2rem;
+  background-color: white;
+  border-radius: 17%;
+}
+
+.head {
+  background-color: rgb(255, 174, 0);
+  border-radius: 15% 15% 0 0;
+}
+
+article h1 {
+  padding: 1.3rem;
+  margin: 0.8rem;
+}
+
+.head h2 {
+  padding: 1.38rem 1.2rem;
+  margin: 0.8rem;
+  color: black;
+  -webkit-text-stroke: #000;
+}
+
+article h2 {
+margin-left: 2.3rem;
+font-size: 28px;
+-webkit-text-stroke: 0.2px rgb(255, 255, 255);
+}
+.red {
+  color: rgb(255, 66, 97);
+}
+.blue {
+  color: rgb(28, 97, 189);
+}
+.orange {
+  color: rgb(233, 132, 17);
+}
+
+
+/* animation */
+.wrapper {
+  position:absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  top: 185%;
+  left: 30%;
+}
+.shape {
+  width: 40rem;
+  height: auto;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+    @keyframes SlideIn {
+      100% {
+        transform: translateX(-54%);
+        opacity: 1;
+      }
+      
+      0% {
+        transform: translateX(0%);
+        opacity: 0;
+      }
+
+    }
+   
+  
+    .shape {
+      animation: SlideIn backwards;
+      animation-timeline: view();
+        animation-range-start: cover 0%;
+          animation-range-end: cover 100%;
+    }
