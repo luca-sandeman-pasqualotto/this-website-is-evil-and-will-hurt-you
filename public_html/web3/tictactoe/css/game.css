@@ -10,6 +10,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: solid black 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #border .box {
@@ -18,5 +22,17 @@
     place-items: center;
     height: 10vmin;
     width: 10vmin;
-    margin: 1px;
+    margin: 0px;
+    background-size: contain;
 }
+
+#border .box:hover {
+    background-color: blue;
+}
+
+nav #replay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+        transform: translate(-50%);
+} 
