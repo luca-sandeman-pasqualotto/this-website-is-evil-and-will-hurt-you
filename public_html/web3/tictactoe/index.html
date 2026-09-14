@@ -1,41 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="css/game.css">
-</head>
-<body>
+<!doctype html>
+<html>
+  <head>
+    <title>La geuerre des consoles</title>
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+
+  <body>
     <main>
-        <header>
-            <h1>
-                Le Gar Du Console
-            </h1>
-        </header>
-        <section>
-            <p id="message"></p>
-        </section>
-        <section>
-            <article id="players"></article>
-        </section>
-        <section>
-            <article id="border">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </article>
-        </section>
+      <header>
+        <h1>La geuerre des consoles</h1>
+      </header>
+      <section id="winner" class="hidden">
+        <p id="message"></p>
         <nav>
-            <button id="replay">Jouer encore</button>
+          <button id="replay">Jouer encore</button>
         </nav>
+      </section>
+      <section>
+        <article id="grille">
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+          <div class="case"></div>
+        </article>
+      </section>
+      <section id="players">
+        <section class="left_player">
+          <h1>Jouer 1</h1>
+        </section>
+        <section class="right_player">
+          <h1>Jouer 2</h1>
+        </section>
+      </section>
     </main>
-</body>
-<script src="js/ttt.js"></script>
+    <script src="./js/ttt.js"></script>
+  </body>
 </html>

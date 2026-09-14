@@ -1,21 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#border{
-    width: calc(30vmin + 12px);
-    height: calc(30vmin + 12px);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: solid black 1px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-
+/*
 #border .box {
     border: solid black 1px;
     display: grid;
@@ -35,4 +18,88 @@ nav #replay {
     top: 30%;
     left: 50%;
         transform: translate(-50%);
+}  */
+
+#grille {
+    width: calc(30vmin + 12px);
+    height: calc(30vmin + 12px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid black 1px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+body.player-n div:hover{
+    background-color: #ff0000bf;
+}
+body.player-s div:hover{
+    background-color: #0000ffbf;
+}
+
+
+
+#players {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -999;
+}
+
+#players .left_player {
+    position: fixed;
+    transform: translateX(-35vw);
+}
+.left_player.player-n {
+    color: #ff0000bf;
+}
+
+#players {
+    color: gray;
+}
+
+#players .right_player {
+    transform: translateX(35vw);
+}
+.right_player.player-s {
+    color: #0000ffbf;
+}
+
+#grille .case {
+    border: solid black 1px;
+    display: grid;
+    place-items: center;
+    height: 10vmin;
+    width: 10vmin;
+    margin: 1px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#winner {
+    position: fixed;
+    min-height: 40vh;
+    z-index: 999;
+    min-width: 40vw;
+    background-color: black;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 0rem;
 } 
+
+#message {
+    color: white;
+}
+
+.hidden {
+    pointer-events: none;
+    opacity: 0%;
+}
+
+nav {
+    margin-top: 1em;
+}
