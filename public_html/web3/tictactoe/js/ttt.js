@@ -5,6 +5,9 @@ let cases = document.querySelectorAll(".case");
 let replayBtn = document.querySelector("#replay");
 let panneauMessage = document.querySelector("#message");
 let panneauMessageGagnant = document.querySelector("#message img");
+let nSound = new Audio("./aud/n.wav");
+let sSound = new Audio("./aud/s.wav");
+let blockSound = new Audio("./aud/no.wav");
 
 // Variables de lâ€™app
 let joueurX = true; //premier joueur X
@@ -30,6 +33,7 @@ document.getElementsByClassName("left_player")[0].classList.add("player-n")
 
 for (let boite of cases) {
     boite.active = true;
+    blockSound.play()
     boite.addEventListener("click", function () {
         
         // math for sprites
@@ -44,11 +48,13 @@ for (let boite of cases) {
             if (joueurX) { //tour du joueur X
                 //boite.innerText = "X";
                 boite.style.backgroundImage = `url('${randomImgN}')`;
+                nSound.play();
                 joueurX = false;
             }
             else { //tour du jour O
                 //boite.innerText = "O";
                 boite.style.backgroundImage = `url('${randomImgS}')`;
+                sSound.play();
                 joueurX = true;
             }
             boite.active = false;
