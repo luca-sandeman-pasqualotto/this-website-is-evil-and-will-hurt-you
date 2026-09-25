@@ -162,3 +162,26 @@ nav button {
     border-radius: 15%;
     border: none;
 }
+
+@media screen and (max-width: 1811px) {
+    header {
+    top: 14vw;
+    margin-top: -28vw;
+    margin-left: -16.23rem;
+    }
+    header h1 {
+        font-size: 36px;
+    padding-top: 16.2rem;
+    padding-left: 5.2rem;
+    padding-right: 6.2rem;
+    }
+    #box_cover {
+    width: 85vw;
+    }
+    #players {
+    left: 104vw
+    }
+    .lilthang {
+        left: 65%;
+    }
+}
