@@ -9,18 +9,34 @@ let nSound = new Audio("./aud/n.wav");
 let sSound = new Audio("./aud/s.wav");
 let blockSound = new Audio("./aud/no.wav");
 
+let background = document.getElementById("sound")
+
+musicBtn.addEventListener("click", function() {
+    if (background.paused) {
+        background.play()
+        .then(() => {
+            musicBtn.innerText = "Stop me!";
+        })
+        .catch(error => console.log("audio failed:", error));
+    } else {
+        song.pause();
+        musicBtn.innerText = "Try me!";
+    }
+})
+
+
 // background song
 let play = false;
-let song = document.getElementById("sound");
-song.oncanplay = function () {
-    song.loop = true;
-    song.volume = 1;
+let song = new Audio("./aud/test.mp3");
+background.oncanplay = function () {
+    background.loop = true;
+    background.volume = 1;
 }
 
-if (!play) {
-    song.play()
-    play = true;
-}
+// if (!play) {
+//     song.play()
+//     play = true;
+// }
 
 
 
@@ -88,14 +104,12 @@ const patrons = [ //les patrons gagnants
 
 // Valide lâ€™Ã©tat du jeu: gagnant ou nulle
 const valide = function () {
-    if ([...cases].every((boite)  => boite.active === false)) { //toutes les cases sont inactives
-        showWinnerText("Partie nul");
-    }
-    else { //sinon valide gagnant
+    let playerWin = false;
+
         for (let patron of patrons) { //boucle des patrons gagnants
-            let val1 = cases[patron[0]].style.backgroundImage.slice(5,10); //les valeurs des positions du patron
-            let val2 = cases[patron[1]].style.backgroundImage.slice(5,10);
-            let val3 = cases[patron[2]].style.backgroundImage.slice(5,10);
+            let val1 = cases[patron[0]].style.backgroundImage //les valeurs des positions du patron
+            let val2 = cases[patron[1]].style.backgroundImage
+            let val3 = cases[patron[2]].style.backgroundImage
             // const val1 = getImageURL(cases[0].style.backgroundImage);
             // const val2 = getImageURL(cases[1].style.backgroundImage);
             // const val3 = getImageURL(cases[2].style.backgroundImage);
@@ -103,26 +117,25 @@ const valide = function () {
             if (val1 &&
                 val1 === val2 &&
                 val1 === val3) {  //nous avons on gagnant
-                    // victoire = true;
-                    
-                    // let winner = "";
-                    // if (val1.includes("n.svg")) {
-                        //     winner = "x"
-                        //     afficheMessage("Le gagnant est Nintendo!")
-                        // }
-                        // else {
-                            //     winner = "o"
-                            //     afficheMessage("Le gagnant est SEGA!")
-                            // }
-                            
-                            //afficheMessage(`Le gagnant est ${val1}`);
-                            showWinnerText(`Le gagnant est ${val1}!`);
-                            // afficheMessage(`Le gagnant est ${val1}!`);
-                            for (let boite of cases) {
-                                boite.active = false;
+                    playerWin = true;
+
+                     if (val1.includes("n_img")) {
+                             showWinnerText("Le gagnant est Equipe N!");
+                             song.currentTime = 0;
+                             song.play()
                             }
+                            else if (val1.includes("s_img")){
+                            showWinnerText("Le gagnant est Equipe S!");
+                        }
+
+                        for (let boite of cases) {
+                            boite.active = false;
                         }
                     }
+                }
+
+                if (!playerWin && [...cases].every((boite) => boite.active === false)) {
+                    showWinnerText("Partie Nulle");
                 }
             };
             
@@ -156,6 +169,8 @@ const valide = function () {
                     boite.active = true;
                 }
                 
+                song.pause();
+
                 // resets players
                 document.body.classList.remove("player-s")
                 document.body.classList.add("player-n")

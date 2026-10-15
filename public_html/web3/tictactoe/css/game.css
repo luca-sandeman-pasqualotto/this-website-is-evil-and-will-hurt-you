@@ -51,6 +51,20 @@ header h1 {
     transform: translate(-50%);
 }
 
+#music_box {
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin-left: 73%;
+    padding: 1.23rem;
+    top: 3.4%;
+
+}
+
+#music_box h2 {
+    max-width: 1ch;
+}
+
 #grille {
     width: calc(50vmin + 12px);
     height: calc(50vmin + 12px);
