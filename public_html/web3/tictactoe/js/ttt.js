@@ -8,6 +8,7 @@ let panneauMessageGagnant = document.querySelector("#message img");
 let nSound = new Audio("./aud/n.wav");
 let sSound = new Audio("./aud/s.wav");
 let blockSound = new Audio("./aud/no.wav");
+let musicBtn = document.querySelector("#music_toggle")
 
 let background = document.getElementById("sound")
 
@@ -19,7 +20,8 @@ musicBtn.addEventListener("click", function() {
         })
         .catch(error => console.log("audio failed:", error));
     } else {
-        song.pause();
+        background.pause();
+        background.currentTime = 0;
         musicBtn.innerText = "Try me!";
     }
 })
@@ -121,8 +123,8 @@ const valide = function () {
 
                      if (val1.includes("n_img")) {
                              showWinnerText("Le gagnant est Equipe N!");
-                             song.currentTime = 0;
-                             song.play()
+                            //  song.currentTime = 0;
+                            //  song.play()
                             }
                             else if (val1.includes("s_img")){
                             showWinnerText("Le gagnant est Equipe S!");

@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#foreground {
+    position: absolute;
+    z-index: 999;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 10em;
+    perspective-origin: 50% calc(50% - 1em);
+    overflow: hidden;
+}
+
+#bubbles {
+    text-align: center;
+}
+
+#exercises, #MAPP {
+    display: grid;
+    position: absolute;
+    background-color: rgba(101, 159, 245, 0.452);
+    border-radius: 50%;
+    align-content: space-evenly;
+    justify-items: center;
+
+}
+
+#videoInner {
+    display: inline-block;
+    position: relative;
+}
+
+#videoOuter {
+   overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    top: 38rem;
+    left: 57vw;
+}
+
+#MAPP {
+    height: 12rem;
+    width: 12rem;
+    top: 24rem;
+    left: 59vw;
+}
+
+#exercises {
+    height: 15rem;
+    width: 15rem;
+    top: 31rem;
+    left: 9vw;
+}
+
+.scene{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+.floor{
+        background-color: black;
+    clip-path: polygon(evenodd, 0% 0%, 99.26% 0%, 99.26% 99.26%, 0% 99.26%, 23.72% 75.54%, 23.72% 23.72%, 75.54% 23.72%, 75.54% 75.54%, 23.72% 75.54%, 0% 99.26%);
+    width: 35em;
+    height: 10em;
+    top: 8em;
+    z-index: 0;
+    position: absolute;
+    transform: 
+        translate(-50%, -50%)
+        rotateX(90deg) 
+        translateZ(-3em);
+}
+
+.water {
+    background-color: blue;
+        width: 52em;
+    height: 19em;
+    top: 8em;
+    z-index: -999;
+    position: absolute;
+    transform: 
+        translate(-50%, -50%)
+        rotateX(90deg) 
+        translateZ(-3em);
+}
+
+.cieling, .frontWall, .leftWall, .rightWall {
+    position: absolute;
+    background-color: #ddfcff;;
+   background-image: 
+   linear-gradient(45deg,#7fffd4 25%, transparent 25%),
+   linear-gradient(-45deg, #7fffd4 25%, transparent 25%), 
+   linear-gradient(45deg, transparent 75%, #7fffd4 75%), 
+   linear-gradient(-45deg, transparent 75%, #7fffd4 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-repeat: repeat;
+    width: 20rem;
+    height: 20rem;
+    top: -16rem;
+    left: -10rem;
+    transform: translateZ(2rem);
+}
+
+.cieling {
+background-image: none;
+    top: -16px;
+    height: 13rem;
+    left: 0;
+    transform: 
+        translate(-50%, -50%) 
+        rotateX(90deg) 
+        translateZ(15em);
+}
+
+.frontWall {
+   clip-path: polygon(0% 0%,
+     0% 100%,
+     33% 100%,
+     33% 39%,
+     67% 39%,
+     68% 100%,
+     33% 100%,
+     33% 100%,
+     100% 100%,
+     100% 0%);
+ }
+
+
+.leftWall {
+    left: -20rem;
+    transform: rotateY(-90deg);
+}
+
+.rightWall {
+   transform: rotateY(90deg);
+   left:0;
+ }
